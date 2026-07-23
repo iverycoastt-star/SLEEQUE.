@@ -3,8 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SLEEQUE — awake body sculpting & whole-body healing · Los Angeles</title>
-<meta name="description" content="Welcome to sleeque. Awake body sculpting & whole-body healing in Los Angeles. Preview your sleeque era with our AI before-and-after tool.">
+<title>SLEEQUE™ — Awake Liposuction & Body Sculpting in Los Angeles</title>
+<meta name="description" content="No sleep. Just results. Awake liposuction, awake BBL and fat transfer in Los Angeles — local anesthesia only, no general anesthesia, same-day home. Take the 60-second quiz to find your sleeque.">
+<link rel="canonical" href="https://sleequeaesthetics.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#7B3FF2">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SLEEQUE">
+<meta property="og:url" content="https://sleequeaesthetics.com/">
+<meta property="og:title" content="SLEEQUE — no sleep. just results.">
+<meta property="og:description" content="Awake body sculpting in Los Angeles. Local anesthesia only. Walk in, sculpt, walk out. Take the 60-second quiz to find your sleeque.">
+<meta property="og:image" content="https://sleequeaesthetics.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SLEEQUE — awake body sculpting, Los Angeles">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SLEEQUE — no sleep. just results.">
+<meta name="twitter:description" content="Awake body sculpting in Los Angeles. Walk in, sculpt, walk out. Find your sleeque in 60 seconds.">
+<meta name="twitter:image" content="https://sleequeaesthetics.com/og.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["MedicalBusiness","HealthAndBeautyBusiness"],
+      "@id": "https://sleequeaesthetics.com/#business",
+      "name": "SLEEQUE",
+      "alternateName": "SLEEQUE Aesthetics",
+      "url": "https://sleequeaesthetics.com/",
+      "image": "https://sleequeaesthetics.com/og.jpg",
+      "logo": "https://sleequeaesthetics.com/apple-touch-icon.png",
+      "description": "Awake body sculpting studio in Los Angeles specializing in awake liposuction, awake BBL and PRF-enriched fat transfer under local anesthesia only.",
+      "slogan": "no sleep. just results.",
+      "medicalSpecialty": "PlasticSurgery",
+      "priceRange": "$$$",
+      "address": { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles" },
+        { "@type": "AdministrativeArea", "name": "Los Angeles County" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/sleeque.aesthetics/",
+        "https://www.tiktok.com/@sleeque.aesthetics"
+      ],
+      "founder": { "@id": "https://sleequeaesthetics.com/#drjackson" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "The Sculpt Menu",
+        "itemListElement": [
+          {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"SLEEQUE Cheeque — awake BBL with PRF-enriched fat transfer"}},
+          {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"SLEEQUE Lift — breast fat transfer with lipo and PRF"}},
+          {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"SLEEQUE360 — awake 360 liposuction of abdomen, waist, hips and lower back"}},
+          {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"The Arms — awake arm liposuction"}},
+          {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"The Legs — awake leg liposuction"}},
+          {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"The Chest — awake gynecomastia liposuction"}},
+          {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"The J-Lift — awake chin and jawline liposuction"}}
+        ]
+      }
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://sleequeaesthetics.com/#drjackson",
+      "name": "Dr. Jay Jackson",
+      "jobTitle": "Founder & Lead Surgeon",
+      "image": "https://sleequeaesthetics.com/images/dr-jackson.jpg",
+      "medicalSpecialty": "PlasticSurgery",
+      "worksFor": { "@id": "https://sleequeaesthetics.com/#business" }
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://sleequeaesthetics.com/",
+      "name": "SLEEQUE",
+      "publisher": { "@id": "https://sleequeaesthetics.com/#business" }
+    }
+  ]
+}
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Hanken+Grotesk:wght@300;400;500;600&display=swap');
 :root{--base:#F6F2FB;--surface:#EDE4FB;--primary:#7B3FF2;--peri:#9C87F6;--lav:#CDB8FB;
@@ -197,6 +277,41 @@ a{color:inherit;text-decoration:none;}
 .qgal img{width:100%;border-radius:14px;display:block;border:1px solid var(--line);}
 .qcta{margin-top:24px;text-align:center;}
 .qcta-h{font-family:'Outfit';font-weight:600;font-size:22px;}
+
+/* recovery timeline */
+.tline{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:38px;}
+.tstep{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 16px;}
+.tstep b{font-family:'Outfit';font-weight:800;font-size:18px;color:var(--primary);display:block;margin-bottom:8px;}
+.tstep span{font-size:13px;color:var(--ink-soft);line-height:1.5;}
+.tstep.lime{background:var(--lime);border-color:var(--lime);}
+.tstep.lime b,.tstep.lime span{color:var(--ink);}
+/* financing */
+.finrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;}
+/* faq */
+.faqs{margin-top:34px;display:flex;flex-direction:column;gap:10px;}
+.faq{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:0 22px;}
+.faq summary{font-family:'Outfit';font-weight:600;font-size:16.5px;padding:18px 0;cursor:pointer;list-style:none;position:relative;padding-right:34px;}
+.faq summary::after{content:"+";position:absolute;right:2px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--primary);font-weight:400;}
+.faq[open] summary::after{content:"–";}
+.faq p{font-size:14.5px;color:var(--ink-soft);line-height:1.65;padding-bottom:18px;}
+
+/* --- surgeon photo --- */
+.drrow{display:grid;grid-template-columns:1fr;gap:20px;margin-top:42px;}
+.drphoto{background:var(--white);border:1px solid var(--line);border-radius:24px;overflow:hidden;margin:0;}
+.drphoto img{display:block;width:100%;height:auto;object-fit:cover;}
+.drphoto figcaption{font-family:'Outfit';font-size:13px;font-weight:500;color:var(--ink-soft);
+  padding:14px 18px;border-top:1px solid var(--line);letter-spacing:.02em;}
+@media(min-width:840px){.drrow{grid-template-columns:0.85fr 1.15fr;align-items:start;}}
+/* --- sticky mobile CTA --- */
+.stickycta{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:color-mix(in srgb,var(--base) 88%,transparent);backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);}
+.stickycta button{width:100%;font-size:16px;padding:16px 20px;}
+@media(max-width:860px){.stickycta{display:block;} body{padding-bottom:82px;}}
+.tm{font-size:.30em;vertical-align:super;letter-spacing:0;font-weight:600;opacity:.75;}
+.hello{font-family:'Outfit';font-weight:500;font-size:15px;letter-spacing:.12em;
+  text-transform:lowercase;color:var(--ink-soft);margin-top:14px;}
 </style>
 </head>
 <body>
@@ -205,7 +320,7 @@ a{color:inherit;text-decoration:none;}
   <div class="wrap nav-in">
     <a href="#top" class="brand disp">SLEEQUE</a>
     <nav class="nav-links">
-      <a href="#physique">the sculpt</a><a href="#proof">real results</a><a href="#about">the surgeon</a><a href="#boutique">wellness</a><a href="#consult">consult</a>
+      <a href="#physique">the sculpt</a><a href="#proof">real results</a><a href="#about">the surgeon</a><a href="#faq">faq</a><a href="#consult">consult</a>
     </nav>
     <div class="nav-cta">
       <button class="btn btn-lime" onclick="openQuiz()">✦ find your sleeque</button>
@@ -215,7 +330,8 @@ a{color:inherit;text-decoration:none;}
   <div class="mobile-menu" id="mm">
     <a href="#physique" onclick="closeMM()">the sculpt</a><a href="#proof" onclick="closeMM()">real results</a>
     <a href="#about" onclick="closeMM()">the surgeon</a>
-    <a href="#boutique" onclick="closeMM()">wellness</a><a href="#consult" onclick="closeMM()">book a consult</a>
+    <a href="#faq" onclick="closeMM()">faq</a>
+    <a href="#consult" onclick="closeMM()">book a consult</a>
   </div>
 </header>
 
@@ -225,10 +341,11 @@ a{color:inherit;text-decoration:none;}
   <div class="wrap hero-in">
     <div class="ai-pill">✦ awake · in-office · <b>same-day recovery</b></div>
     <div class="eyebrow">awake body sculpting · los angeles</div>
-    <h1>SLEEQUE</h1>
+    <h1>SLEEQUE<span class="tm">™</span></h1>
     <p class="rhyme">sleeque · physique · boutique · unique</p>
-    <p class="tag disp">welcome to sleeque.</p>
+    <p class="tag disp">no sleep. just results.</p>
     <p class="beat">walk in · sculpt · walk out</p>
+    <p class="hello">welcome to sleeque ✦</p>
     <p class="sub">no general anesthesia. no week in bed. awake liposuction &amp; fat transfer — you're present, you're in control, and you go home the same day. body work, done gently.</p>
     <div class="hero-cta">
       <button class="btn btn-lime" onclick="openQuiz()">✦ find your sleeque — take the quiz</button>
@@ -236,7 +353,7 @@ a{color:inherit;text-decoration:none;}
     </div>
     <div class="hero-stats">
       <div class="hstat"><b>awake</b><span>local anesthesia only</span></div>
-      <div class="hstat"><b>~45 min</b><span>average procedure</span></div>
+      <div class="hstat"><b>~90 min</b><span>average procedure</span></div>
       <div class="hstat"><b>same day</b><span>home to recover</span></div>
       <div class="hstat"><b>minimal</b><span>downtime</span></div>
     </div>
@@ -250,15 +367,14 @@ a{color:inherit;text-decoration:none;}
     <h2 class="sec-h">the sculpt menu</h2>
     <p class="sec-lede">Awake liposuction &amp; fat transfer — gentle, present, yours to feel. Sculpted with care, healed with intention.</p>
     <div class="proc-grid">
-      <div class="proc"><div class="area">awake BBL · PRF-enriched fat transfer</div><h3>SLEEQUE Cheeque</h3>
+      <div class="proc"><div class="area">awake BBL · PRF-enriched fat transfer</div><h3>SLEEQUE Cheeque™</h3>
         <div class="sizes"><span class="size">Soft</span><span class="size">Full</span><span class="size x">Extra</span></div></div>
-      <div class="proc"><div class="area">breast · fat transfer + lipo + PRF</div><h3>SLEEQUE Lift</h3>
-        <div class="sizes"><span class="size">Soft</span><span class="size">Full</span><span class="size x">Extra</span></div></div>
-      <div class="proc"><div class="area">abs 360 · upper/lower abs · waist · hips · lower back</div><h3>SLEEQUE360</h3><p>The full-torso sculpt — a complete cinch, all the way around.</p></div>
+      <div class="proc"><div class="area">breast · fat transfer + lipo + PRF</div><h3>SLEEQUE Lift™</h3><p>Your own fat, transferred with PRF — softer, warmer, yours.</p></div>
+      <div class="proc"><div class="area">abs 360 · upper/lower abs · waist · hips · lower back</div><h3>SLEEQUE360™</h3><p>The full-torso sculpt — a complete cinch, all the way around.</p></div>
       <div class="proc"><div class="area">arm lipo</div><h3>The Arms</h3><p>Sculpted arms for everything sleeveless. Awake, refined, sleeque.</p></div>
       <div class="proc"><div class="area">thigh lipo</div><h3>The Legs</h3><p>Long, refined, contoured. The sculpt that gives you your legs back.</p></div>
       <div class="proc"><div class="area">male chest · gynecomastia</div><h3>The Chest</h3><p>Flat, defined, confident. Gynecomastia care for him — awake and discreet.</p></div>
-      <div class="proc"><div class="area">chin lipo</div><h3>The J-Lift</h3><p>The signature jaw &amp; chin definition. Sleeque by SLEEQUE. ✦</p></div>
+      <div class="proc"><div class="area">chin lipo</div><h3>The J-Lift™</h3><p>The signature jaw &amp; chin definition. Sleeque by SLEEQUE. ✦</p></div>
       <div class="proc" style="border:1.5px dashed var(--primary)"><div class="area">standard protocol · every fat transfer</div><h3>PRF, always ✦</h3><p>Your own growth factors — drawn from a quick blood sample and blended into every SLEEQUE Cheeque and SLEEQUE Lift to support how your transfer settles and takes. Not an upsell. The standard.</p></div>
     </div>
   </div>
@@ -283,13 +399,19 @@ a{color:inherit;text-decoration:none;}
     <div class="sec-eyebrow">the surgeon</div>
     <h2 class="sec-h">one specialty. <b>perfected.</b></h2>
     <p class="sec-lede">Most clinics offer a menu of everything. SLEEQUE was built on the opposite idea — do one thing at the highest level: awake body sculpting.</p>
-    <div class="care" style="margin-top:34px">
+    <div class="drrow">
+      <figure class="drphoto">
+        <img src="images/dr-jackson.jpg" alt="Dr. Jay Jackson, founder and lead surgeon at SLEEQUE, awake body sculpting in Los Angeles" width="900" height="1125" loading="lazy">
+        <figcaption>Dr. Jay Jackson &middot; founder &amp; lead surgeon</figcaption>
+      </figure>
       <div class="care-col">
         <div class="ttl disp">Dr. Jay Jackson</div>
         <div class="bun">founder · lead surgeon</div>
         <p style="font-size:15px;line-height:1.7;color:var(--ink-soft)">After years inside some of the busiest liposuction boutiques in the country, Dr. Jackson walked away with one conviction: the patient experience deserved better. So he built SLEEQUE — his own studio, his own standard, where he shapes every detail of your journey from first consult to final reveal.</p>
         <p style="font-size:15px;line-height:1.7;color:var(--ink-soft);margin-top:12px">His craft is precision with a gentle hand — awake sculpting that works <em>with</em> your body, never against it. For the moms who want their body back. For the women who want that little extra confidence. And for a few faces you'd recognize, who trust him quietly with theirs. ✦</p>
       </div>
+    </div>
+    <div class="care" style="margin-top:20px">
       <div class="care-col">
         <div class="ttl disp">why patients choose him</div>
         <div class="bun">the sleeque standard</div>
@@ -316,32 +438,50 @@ a{color:inherit;text-decoration:none;}
   </div>
 </section>
 
-<!-- THE BOUTIQUE -->
-<section class="section" id="boutique">
+<!-- RECOVERY TIMELINE -->
+<section class="section alt" id="recovery">
   <div class="wrap reveal">
-    <div class="sec-eyebrow">the boutique</div>
-    <h2 class="sec-h">and when you're ready — <b>we help you heal.</b></h2>
-    <p class="sec-lede">Awake means less trauma and faster recovery to begin with. These optional add-ons simply help you feel your best — before and after.</p>
-    <span class="optin">optional · à la carte or bundled</span>
-    <div class="care">
-      <div class="care-col">
-        <div class="ttl disp">The Primer</div><div class="bun">pre-op · heal-first prep</div>
-        <div class="care-item"><span class="nm">The Baseline</span><span class="ds">optimization bloodwork + consult</span></div>
-        <div class="care-item"><span class="nm">The Reserve</span><span class="ds">iron-building readiness IV</span></div>
-        <div class="care-item"><span class="nm">The Shield</span><span class="ds">immune + vitamin prep IV</span></div>
-        <div class="care-item"><span class="nm">The Foundation</span><span class="ds">healing peptide therapy</span></div>
-        <div class="care-item"><span class="nm">The Prep Stack</span><span class="ds">SLEEQUE × RECŌVR supplements</span></div>
-        <div class="care-item"><span class="nm">The Light + Oxygen</span><span class="ds">red light · hyperbaric prep</span></div>
-      </div>
-      <div class="care-col">
-        <div class="ttl disp">The Afterglow</div><div class="bun">post-op · the recovery others skip</div>
-        <div class="care-item"><span class="nm">The Drain</span><span class="ds">lymphatic drainage series</span></div>
-        <div class="care-item"><span class="nm">The Replenish</span><span class="ds">recovery IV drips</span></div>
-        <div class="care-item"><span class="nm">The Light + Oxygen</span><span class="ds">LED · hyperbaric healing</span></div>
-        <div class="care-item"><span class="nm">The Snatch Suit</span><span class="ds">compression + fittings</span></div>
-        <div class="care-item"><span class="nm">The Smooth</span><span class="ds">scar care + RF tightening</span></div>
-        <div class="care-item"><span class="nm">The Reveal ✦</span><span class="ds">your milestone result appointment</span></div>
-      </div>
+    <div class="sec-eyebrow">the recovery</div>
+    <h2 class="sec-h">what "minimal downtime" <b>actually looks like.</b></h2>
+    <p class="sec-lede">Because you're awake — no general anesthesia — recovery starts gentler. Here's the typical arc:</p>
+    <div class="tline">
+      <div class="tstep"><b>day 0</b><span>walk in · sculpt (~45m–2h) · walk out the same day</span></div>
+      <div class="tstep"><b>day 1</b><span>shower, easy movement — many desk-workers are back at it</span></div>
+      <div class="tstep"><b>days 2–7</b><span>compression on, soreness like a hard workout, daily walks</span></div>
+      <div class="tstep"><b>week 2</b><span>most swelling settles · back to most of your routine</span></div>
+      <div class="tstep"><b>weeks 3–4</b><span>light workouts return</span></div>
+      <div class="tstep lime"><b>week 6 ✦</b><span>the reveal — curves settled, compression graduates</span></div>
+    </div>
+    <p class="proof-note">Every body heals on its own schedule — this is a typical arc, not a promise. Your personalized recovery plan comes from your consult.</p>
+  </div>
+</section>
+
+<!-- FINANCING -->
+<section class="section" id="financing">
+  <div class="wrap reveal">
+    <div class="sec-eyebrow">the financing</div>
+    <h2 class="sec-h">yes — you can <b>split it into payments.</b></h2>
+    <p class="sec-lede">Monthly payment plans through our financing partners. Applying takes about a minute, uses a soft credit check that doesn't affect your score, and you'll see your options instantly.</p>
+    <div class="finrow">
+      <a class="btn btn-lime" href="FINANCING_CHERRY_URL" target="_blank">apply with cherry →</a>
+      <a class="btn btn-ghost" href="FINANCING_PATIENTFI_URL" target="_blank">apply with patientfi →</a>
+    </div>
+    <p class="proof-note">Prequalifying doesn't commit you to anything — most patients apply before their consult so the money conversation is already handled.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt" id="faq">
+  <div class="wrap reveal">
+    <div class="sec-eyebrow">the questions</div>
+    <h2 class="sec-h">awake lipo, <b>answered honestly.</b></h2>
+    <div class="faqs">
+      <details class="faq"><summary>Am I really awake the whole time?</summary><p>Yes — and that's the point. We use local anesthesia to fully numb the treatment area, so you're comfortable, present, and in control. You can talk to us, listen to music, even watch. No general anesthesia means no breathing tube, no grogginess, and no lost day.</p></details>
+      <details class="faq"><summary>Will it hurt?</summary><p>The first numbing injections feel like a pinch and some pressure — that's the most you'll feel. During sculpting, patients describe pressure and movement, not sharp pain. And because you're awake, you can tell us how you're feeling in real time and we adjust immediately.</p></details>
+      <details class="faq"><summary>How long does the procedure take?</summary><p>Most procedures run about 90 minutes; smaller single areas can be quicker and larger plans like SLEEQUE360™ can take longer. Either way, you walk in and walk out the same day — no hospital, no overnight stay.</p></details>
+      <details class="faq"><summary>Is awake liposuction safe?</summary><p>Awake tumescent liposuction avoids general anesthesia entirely, which removes some of the most significant risks of traditional surgery. Every procedure is performed by Dr. Jackson himself, and every patient is screened at their consult to confirm they're a good candidate.</p></details>
+      <details class="faq"><summary>When can I go back to work?</summary><p>Many desk-job patients are back within 1–3 days. You'll wear a compression garment for several weeks, and light workouts typically return around weeks 3–4. Your consult maps your exact timeline.</p></details>
+      <details class="faq"><summary>How much does it cost?</summary><p>Every plan is custom to your body and goals, so exact pricing happens at your consult — and monthly payment plans are available through Cherry and PatientFi. Prequalify in about a minute with no impact to your credit score.</p></details>
     </div>
   </div>
 </section>
@@ -374,15 +514,15 @@ a{color:inherit;text-decoration:none;}
         <div class="row"><div class="k">the approach</div><div class="v">awake · gentle · heal-first</div></div>
         <div class="row"><div class="k">consults</div><div class="v">complimentary &amp; pressure-free</div></div>
         <div class="row"><div class="k">say hi</div><div class="v" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-  <a href="https://instagram.com/sleequeaesthetic" target="_blank" style="display:inline-flex;align-items:center;gap:6px;color:var(--primary)">
+  <a href="https://instagram.com/sleeque.aesthetics" target="_blank" style="display:inline-flex;align-items:center;gap:6px;color:var(--primary)">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
   </a>
-  <a href="https://tiktok.com/@sleequeaesthetic" target="_blank" style="display:inline-flex;align-items:center;color:var(--primary)">
+  <a href="https://tiktok.com/@sleeque.aesthetics" target="_blank" style="display:inline-flex;align-items:center;color:var(--primary)">
     <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.5c-1.3.1-2.5-.3-3.5-1v6.4c0 3.3-2.4 5.7-5.5 5.7-3 0-5.3-2.2-5.3-5.1 0-3.1 2.6-5.4 6-4.9v2.7c-.4-.1-.9-.2-1.3-.2-1.4 0-2.4 1-2.4 2.4 0 1.5 1.1 2.5 2.6 2.5 1.5 0 2.6-1.1 2.6-2.9V3h2.8z"/></svg>
   </a>
-  <span>@sleequeaesthetic</span>
+  <span>@sleeque.aesthetics</span>
 </div></div>
-        <div class="row"><div class="k">not sure where to start?</div><div class="v"><button class="btn btn-ghost" onclick="openQuiz()" style="margin-top:6px">✦ try the AI preview first →</button></div></div>
+        <div class="row"><div class="k">not sure where to start?</div><div class="v"><button class="btn btn-ghost" onclick="openQuiz()" style="margin-top:6px">✦ take the quiz first →</button></div></div>
       </div>
     </div>
   </div>
@@ -393,12 +533,12 @@ a{color:inherit;text-decoration:none;}
     <span class="brand disp">SLEEQUE</span>
     <div class="que">technique · physique · boutique · mystique</div>
     <div class="cols">
-      <div class="col"><h4>the sculpt</h4><a href="#physique">SLEEQUE Cheeque</a><a href="#physique">SLEEQUE Lift</a><a href="#physique">SLEEQUE360</a><a href="#physique">The Arms</a><a href="#physique">The Legs</a><a href="#physique">The Chest</a><a href="#physique">The J-Lift</a></div>
-      <div class="col"><h4>wellness</h4><a href="#boutique">The Primer</a><a href="#boutique">The Afterglow</a></div>
-      <div class="col"><h4>explore</h4><a href="#proof">Real results</a><a href="#preview">AI before &amp; after</a><a href="#consult">Book a consult</a></div>
-      <div class="col"><h4>studio</h4><a href="#top">Los Angeles, CA</a><a href="#top">@sleequeaesthetic</a></div>
+      <div class="col"><h4>the sculpt</h4><a href="/cheeque">SLEEQUE Cheeque™</a><a href="/lift">SLEEQUE Lift™</a><a href="/360">SLEEQUE360™</a><a href="#physique">The Arms</a><a href="#physique">The Legs</a><a href="#physique">The Chest</a><a href="/jlift">The J-Lift™</a></div>
+      
+      <div class="col"><h4>explore</h4><a href="#proof">Real results</a><a href="#preview">Find your sleeque</a><a href="#recovery">Recovery timeline</a><a href="#financing">Financing</a><a href="#faq">FAQ</a><a href="#consult">Book a consult</a></div>
+      <div class="col"><h4>studio</h4><a href="#top">Los Angeles, CA</a><a href="#top">@sleeque.aesthetics</a></div>
     </div>
-    <p class="fine">sculpted with care, healed with intention. ✦ &nbsp;|&nbsp; SLEEQUE provides cosmetic procedures performed by a licensed surgeon. Before-and-after photos show real patients who consented to sharing; individual results vary and depend on anatomy, healing, and lifestyle. AI previews are illustrations, not guarantees of results. Consult with a qualified provider. © 2026 SLEEQUE.</p>
+    <p class="fine">sculpted with care, healed with intention. ✦ &nbsp;|&nbsp; SLEEQUE provides cosmetic procedures performed by a licensed surgeon. Before-and-after photos show real patients who consented to sharing; individual results vary and depend on anatomy, healing, and lifestyle. Consult with a qualified provider. © 2026 SLEEQUE.</p>
   </div>
 </footer>
 
@@ -438,37 +578,35 @@ function submitConsult(){
    proc keys: "cheeque" "lift" "s360" "arms" "legs" "chest" "jlift"  (a photo can carry several, e.g. ["lift","s360"])
    The photo automatically appears in The Proof AND in the matching quiz results. */
 const GALLERY=[
- {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + 360", sub:"awake BBL + 360 lipo", pair:"images/cheeque-1-pair.jpg"},
- {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + 360", sub:"awake BBL + 360 lipo", pair:"images/cheeque-4-pair.jpg"},
+ {proc:["cheeque","s360"], title:"SLEEQUE Cheeque (Soft) + SLEEQUE360", sub:"awake BBL + awake 360 lipo", pair:"images/cheeque-4-pair.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo · abs · waist · hips", before:"images/s360-before.jpg", after:"images/s360-after.jpg"},
- {proc:["lift","s360"], title:"SLEEQUE Lift + 360", sub:"fat transfer to breast + awake 360 lipo", before:"images/lift360-before.jpg", after:"images/lift360-after.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/s360-8-pair.jpg"},
- {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + 360", sub:"awake BBL + 360 lipo", pair:"images/cheeque-7-pair.jpg"},
+ {proc:["cheeque","s360"], title:"SLEEQUE Cheeque (Full) + SLEEQUE360", sub:"awake BBL + awake 360 lipo", pair:"images/cheeque-7-pair.jpg"},
  {proc:["jlift"], title:"The J-Lift", sub:"chin lipo — the signature jaw & chin", pair:"images/jlift-6-pair.jpg"},
  {proc:["chest"], title:"The Chest", sub:"gynecomastia · awake lipo", pair:"images/chest-2-pair.jpg"},
  {proc:["arms"], title:"The Arms", sub:"awake arm lipo", pair:"images/arms-1-pair.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/s360-5-pair.jpg"},
- {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + 360", sub:"awake BBL + 360 lipo", pair:"images/cheeque-5-pair.jpg"},
+ {proc:["cheeque","s360"], title:"SLEEQUE Cheeque (Soft) + SLEEQUE360", sub:"awake BBL + awake 360 lipo", pair:"images/cheeque-5-pair.jpg"},
  {proc:["jlift"], title:"The J-Lift", sub:"chin lipo", pair:"images/jlift-1-pair.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/s360-2-pair.jpg"},
- {proc:["chest"], title:"The Chest", sub:"gynecomastia · awake lipo", pair:"images/chest-pair.jpg"},
+ {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/chest-pair.jpg"},
  {proc:["arms"], title:"The Arms", sub:"awake arm lipo", pair:"images/arms-2-pair.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/s360-3-pair.jpg"},
  {proc:["jlift"], title:"The J-Lift", sub:"chin lipo", pair:"images/jlift-2-pair.jpg"},
- {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + 360", sub:"awake BBL + 360 lipo", pair:"images/cheeque-6-pair.jpg"},
+ {proc:["cheeque","s360"], title:"SLEEQUE Cheeque (Soft) + SLEEQUE360", sub:"awake BBL + awake 360 lipo", pair:"images/cheeque-6-pair.jpg"},
  {proc:["lift"], title:"SLEEQUE Lift", sub:"breast · fat transfer + PRF", before:"images/lift-before.jpg", after:"images/lift-after.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/s360-4-pair.jpg"},
  {proc:["jlift"], title:"The J-Lift", sub:"chin lipo", pair:"images/jlift-3-pair.jpg"},
  {proc:["chest"], title:"The Chest", sub:"gynecomastia · awake lipo", pair:"images/chest-3-pair.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/s360-6-pair.jpg"},
  {proc:["jlift"], title:"The J-Lift", sub:"chin lipo", pair:"images/jlift-4-pair.jpg"},
- {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + 360", sub:"awake BBL + 360 lipo", pair:"images/cheeque-2-pair.jpg"},
+ {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + SLEEQUE360", sub:"awake BBL + awake 360 lipo", pair:"images/cheeque-2-pair.jpg"},
  {proc:["s360"], title:"SLEEQUE360", sub:"awake 360 lipo", pair:"images/s360-7-pair.jpg"},
  {proc:["jlift"], title:"The J-Lift", sub:"chin lipo", pair:"images/jlift-5-pair.jpg"},
  {proc:["chest"], title:"The Chest", sub:"gynecomastia · awake lipo", pair:"images/chest-4-pair.jpg"},
  {proc:["arms"], title:"The Arms", sub:"awake arm lipo", pair:"images/arms-3-pair.jpg"},
  {proc:["chest"], title:"The Chest", sub:"gynecomastia · awake lipo", pair:"images/chest-5-pair.jpg"},
- {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + 360", sub:"awake BBL + 360 lipo", pair:"images/cheeque-3-pair.jpg"},
+ {proc:["cheeque","s360"], title:"SLEEQUE Cheeque + SLEEQUE360", sub:"awake BBL + awake 360 lipo", pair:"images/cheeque-3-pair.jpg"},
 ];
 function renderProof(){
   const g=document.getElementById('proofgrid'); if(!g)return;
@@ -484,13 +622,13 @@ renderProof();
 /* ============ THE SLEEQUE QUIZ ============ */
 // Each answer carries "points" toward one or more procedures. Highest score at the end = match.
 const PROCS = {
-  cheeque:{name:"SLEEQUE Cheeque",tag:"awake BBL · PRF-enriched fat transfer",why:"you want more shape, lift, and curve — made from your own fat, enriched with PRF, no implants.",gallery:"cheeque"},
-  lift:{name:"SLEEQUE Lift",tag:"breast · fat transfer + lipo + PRF",why:"you want natural fullness and shape up top — your own fat, softly done, all you.",gallery:"lift"},
-  s360:{name:"SLEEQUE360",tag:"abs · waist · hips · lower back",why:"you want the full snatched silhouette — sculpted all the way around into an hourglass.",gallery:"s360"},
+  cheeque:{name:"SLEEQUE Cheeque™",tag:"awake BBL · PRF-enriched fat transfer",why:"you want more shape, lift, and curve — made from your own fat, enriched with PRF, no implants.",gallery:"cheeque"},
+  lift:{name:"SLEEQUE Lift™",tag:"breast · fat transfer + lipo + PRF",why:"you want natural fullness and shape up top — your own fat, softly done, all you.",gallery:"lift"},
+  s360:{name:"SLEEQUE360™",tag:"abs · waist · hips · lower back",why:"you want the full snatched silhouette — sculpted all the way around into an hourglass.",gallery:"s360"},
   arms:{name:"The Arms",tag:"arm lipo",why:"you want sleeveless-ready arms — refined, toned, sleeque.",gallery:"arms"},
   legs:{name:"The Legs",tag:"thigh lipo",why:"you want longer, leaner, more contoured legs.",gallery:"legs"},
   chest:{name:"The Chest",tag:"male chest · gynecomastia",why:"you want a flatter, more defined chest — awake, discreet, confident.",gallery:"chest"},
-  jlift:{name:"The J-Lift",tag:"chin lipo",why:"you want a sharper jawline and profile — subtle, sculpted, sleeque.",gallery:"jlift"},
+  jlift:{name:"The J-Lift™",tag:"chin lipo",why:"you want a sharper jawline and profile — subtle, sculpted, sleeque.",gallery:"jlift"},
 };
 
 const QUIZ = [
@@ -602,5 +740,6 @@ function bookFromQuiz(procName){
   window.open(url,'_blank');
 }
 </script>
+<div class="stickycta"><button class="btn btn-lime" onclick="openQuiz()">✦ find your sleeque — 60-sec quiz</button></div>
 </body>
 </html>
