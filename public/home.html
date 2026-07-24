@@ -312,6 +312,44 @@ a{color:inherit;text-decoration:none;}
 .tm{font-size:.30em;vertical-align:super;letter-spacing:0;font-weight:600;opacity:.75;}
 .hello{font-family:'Outfit';font-weight:500;font-size:15px;letter-spacing:.12em;
   text-transform:lowercase;color:var(--ink-soft);margin-top:14px;}
+
+/* --- the sleeque standard --- */
+.std{margin-top:26px;}
+.std-head{margin:0 0 22px;}
+.std-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.stat{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:22px 20px;
+  display:flex;flex-direction:column;gap:2px;transition:transform .2s,border-color .2s,box-shadow .2s;}
+.stat:hover{transform:translateY(-4px);border-color:var(--lav);box-shadow:0 14px 34px -18px rgba(123,63,242,.42);}
+.stat b{font-family:'Outfit';font-weight:800;font-size:clamp(34px,6vw,46px);line-height:1;
+  letter-spacing:-.02em;color:var(--primary);}
+.stat .plus{font-size:.55em;vertical-align:super;font-weight:700;}
+.stat .lbl{font-family:'Outfit';font-weight:600;font-size:14px;letter-spacing:.03em;margin-top:8px;}
+.stat .sub{font-size:12.5px;line-height:1.5;color:var(--ink-soft);margin-top:5px;}
+@media(min-width:840px){
+  .std-grid{grid-template-columns:repeat(5,1fr);gap:14px;}
+  .std-head{display:flex;align-items:baseline;gap:16px;}
+  .std-head .bun{margin:0;}
+}
+@media(min-width:840px){.drphoto{position:sticky;top:88px;}}
+
+/* --- inside the studio (looping video band) --- */
+.studio{position:relative;min-height:clamp(420px,72vh,660px);display:flex;align-items:center;
+  overflow:hidden;background:var(--ink);}
+.studio-vid{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity .9s ease;}
+.studio-vid.is-on{opacity:1;}
+.studio-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+.studio-scrim{position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(34,22,52,.86) 0%,rgba(34,22,52,.58) 46%,rgba(34,22,52,.24) 100%);}
+.studio-copy{position:relative;z-index:2;max-width:1140px;width:100%;
+  margin:0 auto;padding:64px clamp(18px,5vw,48px);color:#fff;}
+.studio-eyebrow{font-family:'Outfit';font-size:11px;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--lime);margin-bottom:16px;}
+.studio-h{font-weight:800;font-size:clamp(50px,11vw,116px);line-height:.92;letter-spacing:-.035em;
+  text-transform:lowercase;}
+.studio-copy p{font-size:clamp(15px,2vw,19px);color:rgba(255,255,255,.82);margin:20px 0 28px;}
+@media(prefers-reduced-motion:reduce){.studio-vid{display:none;}}
+
 </style>
 </head>
 <body>
@@ -380,6 +418,24 @@ a{color:inherit;text-decoration:none;}
   </div>
 </section>
 
+<!-- INSIDE THE STUDIO -->
+<section class="studio" id="studio">
+  <img class="studio-poster" src="images/studio-poster.jpg" alt="" aria-hidden="true">
+  <video class="studio-vid is-on" data-clip="0" muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="videos/studio-1.mp4" type="video/mp4">
+  </video>
+  <video class="studio-vid" data-clip="1" muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="videos/studio-2.mp4" type="video/mp4">
+  </video>
+  <div class="studio-scrim"></div>
+  <div class="studio-copy">
+    <div class="studio-eyebrow">inside the studio</div>
+    <h2 class="studio-h disp">prep.<br>sculpt.<br>recover.</h2>
+    <p>awake. in-office. home the same day.</p>
+    <button class="btn btn-lime" onclick="openQuiz()">✦ find your sleeque</button>
+  </div>
+</section>
+
 <!-- THE PROOF -->
 <section class="section" id="proof">
   <div class="wrap reveal">
@@ -411,15 +467,17 @@ a{color:inherit;text-decoration:none;}
         <p style="font-size:15px;line-height:1.7;color:var(--ink-soft);margin-top:12px">His craft is precision with a gentle hand — awake sculpting that works <em>with</em> your body, never against it. For the moms who want their body back. For the women who want that little extra confidence. And for a few faces you'd recognize, who trust him quietly with theirs. ✦</p>
       </div>
     </div>
-    <div class="care" style="margin-top:20px">
-      <div class="care-col">
+    <div class="std">
+      <div class="std-head">
         <div class="ttl disp">why patients choose him</div>
         <div class="bun">the sleeque standard</div>
-        <div class="care-item"><span class="nm">6,000+ procedures</span><span class="ds">a career built on body sculpting</span></div>
-        <div class="care-item"><span class="nm">awake specialist</span><span class="ds">local anesthesia only — you're present &amp; in control</span></div>
-        <div class="care-item"><span class="nm">one specialty</span><span class="ds">not a hundred procedures. this one, mastered</span></div>
-        <div class="care-item"><span class="nm">gentle by design</span><span class="ds">precision technique, easier recovery</span></div>
-        <div class="care-item"><span class="nm">every case, his hands</span><span class="ds">your surgeon is your surgeon — start to finish</span></div>
+      </div>
+      <div class="std-grid">
+        <div class="stat"><b>6,000<span class="plus">+</span></b><span class="lbl">procedures</span><span class="sub">a career built on body sculpting</span></div>
+        <div class="stat"><b>100<span class="plus">%</span></b><span class="lbl">awake</span><span class="sub">local anesthesia only — you're present &amp; in control</span></div>
+        <div class="stat"><b>1</b><span class="lbl">specialty</span><span class="sub">not a hundred procedures. this one, mastered</span></div>
+        <div class="stat"><b>~90<span class="plus">m</span></b><span class="lbl">in the room</span><span class="sub">precision technique, easier recovery</span></div>
+        <div class="stat"><b>1:1</b><span class="lbl">every case</span><span class="sub">your surgeon is your surgeon, start to finish</span></div>
       </div>
     </div>
   </div>
@@ -739,6 +797,39 @@ function bookFromQuiz(procName){
   const url=JOTFORM_URL+(JOTFORM_URL.includes('?')?'&':'?')+'procedure='+encodeURIComponent(procName);
   window.open(url,'_blank');
 }
+
+
+
+/* studio band — alternate the two clips with a crossfade.
+   A clip that fails to load drops out of rotation so the band
+   never fades to an empty layer; the poster sits behind as backup. */
+(function(){
+  var all=[].slice.call(document.querySelectorAll('#studio .studio-vid'));
+  if(!all.length) return;
+  var live=all.slice();
+  function play(v){ try{ var p=v.play(); if(p&&p.catch) p.catch(function(){}); }catch(e){} }
+  all.forEach(function(v){
+    v.addEventListener('error',function(){ drop(v); });
+    var s=v.querySelector('source'); if(s) s.addEventListener('error',function(){ drop(v); });
+    play(v);
+  });
+  function drop(v){
+    var k=live.indexOf(v); if(k>-1) live.splice(k,1);
+    v.classList.remove('is-on'); v.style.display='none';
+    if(live.length===1) live[0].classList.add('is-on');
+  }
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) return;
+  var i=0;
+  setInterval(function(){
+    if(live.length<2) return;
+    live[i % live.length].classList.remove('is-on');
+    i=(i+1) % live.length;
+    var v=live[i];
+    try{ v.currentTime=0; }catch(e){}
+    play(v); v.classList.add('is-on');
+  }, 2400);
+})();
 </script>
 <div class="stickycta"><button class="btn btn-lime" onclick="openQuiz()">✦ find your sleeque — 60-sec quiz</button></div>
 </body>
