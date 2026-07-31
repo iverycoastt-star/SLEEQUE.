@@ -43,6 +43,16 @@
       "slogan": "no sleep. just results.",
       "medicalSpecialty": "PlasticSurgery",
       "priceRange": "$$$",
+      "telephone": "+1-310-770-7463",
+      "email": "info@sleequeaesthetics.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-310-770-7463",
+        "email": "info@sleequeaesthetics.com",
+        "contactType": "customer service",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      },
       "address": { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
       "areaServed": [
         { "@type": "City", "name": "Los Angeles" },
@@ -356,6 +366,17 @@ a{color:inherit;text-decoration:none;}
 .q-sig{font-family:'Outfit';font-weight:500;font-size:13px;color:rgba(255,255,255,.85);}
 .q-que{font-family:'Outfit';font-size:11px;letter-spacing:.14em;text-transform:lowercase;
   color:rgba(255,255,255,.55);}
+
+/* --- footer contact lines --- */
+.cline{display:flex;align-items:center;gap:11px;padding:9px 0;}
+.cline:hover .cico{background:var(--lime);color:var(--ink);border-color:var(--lime);transform:translateY(-1px);}
+.cico{flex:none;width:32px;height:32px;border-radius:11px;display:grid;place-items:center;
+  background:rgba(216,206,234,.10);border:1px solid rgba(216,206,234,.20);color:var(--lime);
+  transition:background .2s,color .2s,border-color .2s,transform .2s;}
+.cico svg{width:16px;height:16px;}
+.ctxt{display:flex;flex-direction:column;line-height:1.25;}
+.ctxt em{font-family:'Outfit';font-style:normal;font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:#9C8AC9;margin-top:3px;}
 </style>
 </head>
 <body>
@@ -516,8 +537,8 @@ a{color:inherit;text-decoration:none;}
     <p class="sec-lede">Because you're awake — no general anesthesia — recovery starts gentler. Here's the typical arc:</p>
     <div class="tline">
       <div class="tstep"><b>day 0</b><span>walk in · sculpt (~90m avg) · walk out the same day</span></div>
-      <div class="tstep"><b>day 1</b><span>shower, easy movement — many desk-workers are back at it</span></div>
-      <div class="tstep"><b>days 2–7</b><span>compression on, soreness like a hard workout, daily walks</span></div>
+      <div class="tstep"><b>day 1</b><span>easy movement — many desk-workers are back at it (no shower for the first 24h)</span></div>
+      <div class="tstep"><b>days 2–7</b><span>first shower · compression on, soreness like a hard workout, daily walks</span></div>
       <div class="tstep"><b>week 2</b><span>most swelling settles · back to most of your routine</span></div>
       <div class="tstep"><b>weeks 3–4</b><span>light workouts return</span></div>
       <div class="tstep lime"><b>week 6 ✦</b><span>the reveal — curves settled, compression graduates</span></div>
@@ -606,7 +627,25 @@ a{color:inherit;text-decoration:none;}
       <div class="col"><h4>the sculpt</h4><a href="/cheeque">SLEEQUE Cheeque™</a><a href="/lift">SLEEQUE Lift™</a><a href="/360">SLEEQUE360™</a><a href="#physique">The Arms</a><a href="#physique">The Legs</a><a href="#physique">The Chest</a><a href="/jlift">The J-Lift™</a></div>
       
       <div class="col"><h4>explore</h4><a href="#proof">Real results</a><a href="#preview">Find your sleeque</a><a href="#recovery">Recovery timeline</a><a href="#financing">Financing</a><a href="#faq">FAQ</a><a href="#consult">Book a consult</a></div>
-      <div class="col"><h4>studio</h4><a href="#top">Los Angeles, CA</a><a href="#top">@sleequeaesthetics</a></div>
+      <div class="col"><h4>studio</h4><a href="#top">Los Angeles, CA</a><a href="https://instagram.com/sleequeaesthetics" target="_blank" rel="noopener">@sleequeaesthetics</a></div>
+      <div class="col"><h4>say hello</h4>
+        <a class="cline" href="sms:+13107707463">
+          <span class="cico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.6 5.6h2.8"/><circle cx="12" cy="18.4" r=".9" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="ctxt">(310) 770-7463<em>text us</em></span>
+        </a>
+        <a class="cline" href="mailto:info@sleequeaesthetics.com">
+          <span class="cico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="5" width="19" height="14" rx="2.6"/><path d="M3.4 6.6 12 13l8.6-6.4"/>
+            </svg>
+          </span>
+          <span class="ctxt">info@sleequeaesthetics.com<em>email us</em></span>
+        </a>
+      </div>
     </div>
     <p class="fine">sculpted with care, healed with intention. ✦ &nbsp;|&nbsp; SLEEQUE provides cosmetic procedures performed by a licensed surgeon. Before-and-after photos show real patients who consented to sharing; individual results vary and depend on anatomy, healing, and lifestyle. Consult with a qualified provider. © 2026 SLEEQUE.</p>
   </div>
